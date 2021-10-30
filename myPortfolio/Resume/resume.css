@@ -1,0 +1,45 @@
+.gridcontainer {
+    display: grid;
+    grid-template-columns: .6fr 1.4fr;
+    grid-template-rows: .8fr 2.6fr 1.4fr;
+    grid-template-areas: 
+    "head main"
+    "sidebar main"
+    "footer footer";
+}
+
+.toadpic { 
+    grid-area: head;
+}
+
+.contactinfo { 
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: darkblue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.listofwork { 
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+ }
+
+.imgofwork { 
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d1313;
+    color: white;
+ }
