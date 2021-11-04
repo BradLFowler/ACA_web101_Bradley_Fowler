@@ -1,0 +1,50 @@
+@media (min-width: 768px){
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: .5fr 3.5fr;
+    grid-template-areas: 
+    "head head"
+    "main img";
+}
+
+.buttons {
+    grid-area: head;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    height: 100px;
+}
+
+button {
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 170px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#profile-pic {
+    grid-area: img;
+    width: auto;
+}
+
+}
+
+body {
+    background-image: url(https://wallpaperaccess.com/full/187161.jpg);
+}
