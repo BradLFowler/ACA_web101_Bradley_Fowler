@@ -1,28 +1,39 @@
 .gridcontainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 2fr;
     grid-template-areas: 
-    "buttons buttons"
-    "head head"
-    "sidebar main"
-    "foot foot";
+    "buttons buttons buttons"
+    "head head head"
+    "sidebar center main"
+    "foot submit bottom";
+}
+
+body {
+    background-image: url(https://eskipaper.com/images/simple-backgrounds-11.jpg);
+    background-size: auto;
 }
 
 .checkbox {
     grid-area: sidebar;
-    text-align: center;
+    margin: auto;
+}
+
+.bdaywish {
+    grid-area: bottom;
+    margin-left: 70px;
 }
     
 
 .emailpassword {
     grid-area: main;
-    text-align: center;
+    margin: auto;
 }
 
 .contactback {
     grid-area: foot;
     text-align: center;
+    margin-left: 40%;
 }
 
 h1 {
@@ -38,7 +49,7 @@ h1 {
     align-items: center;
 }
 
-button {
+section button {
     color: white;
     background-color: black;
     height: 50px;
@@ -50,4 +61,22 @@ button {
 
 h4 {
     font-size: 25px;
+}
+
+.comments {
+    grid-area: center;
+    margin: auto;
+}
+
+.submit {
+    grid-area: submit;
+    margin: auto;
+}
+
+.submit button {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    margin-top: 70px;
 }

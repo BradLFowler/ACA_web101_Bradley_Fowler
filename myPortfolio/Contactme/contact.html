@@ -14,16 +14,17 @@
 
     <section class="buttons">
 
-        <button class="portf">My Portfolio</button>
-        <button class="about">About Me</button>
+        <a href="https://bradlfowler.github.io/ACA_web101_Bradley_Fowler/myPortfolio/index.html"><button class="portf">My Portfolio</button></a>
+        <a href="https://bradlfowler.github.io/ACA_web101_Bradley_Fowler/myPortfolio/Aboutpage/about.html"><button class="about">About Me</button></a>
         <button class="resume">Resume</button>
-        <button class="blog">My Blog</button>
+        <a href="https://medium.com/@bradlf00"><button class="blog">My Blog</button></a>
 
     </section>
 
     <h1>Contact Me</h1>
 
-    <form class="checkbox">
+
+    <form action="results.html" method="get" enctype="multipart/form-data" class="checkbox">
 
         <h2>How did you hear about me?</h2>
 
@@ -38,21 +39,21 @@
         <br><br>
         <input type="checkbox" id="codingaca" name="checkbox">
         <label for="checkbox">Coding Academy Rec</label>
-        <!-- align to center -->
+
     </form>
 
-    <form class="emailpassword">
+    <form action="results.html" method="get" enctype="multipart/form-data" class="emailpassword">
         <h3>Email:</h3>
         <input type="email" class="email">
 
         <h3>Password:</h3>
         <input type="password" class="password">
-        <!-- align to center -->
+
     </form>
 
-    <form class="contactback">
+    <form action="results.html" method="get" enctype="multipart/form-data" class="contactback">
 
-        <h4>Contact Back</h4>
+        <h4>Contact Back?</h4>
 
         <input type="radio" id="yesr" name="radio">
         <label for="radio">Yes</label>
@@ -60,7 +61,24 @@
         <label for="radio">No</label>
 
     </form>
-    <!-- add bday input -->
+
+    <form action="results.html" method="get" enctype="multipart/form-data" class="bdaywish">
+
+        <h4>Birthday Wish?</h4>
+        <input type="date" class="date">
+
+    </form>
+
+    <form action="results.html" method="get" enctype="multipart/form-data" class="comments">
+
+        <h4>Comments</h4>
+        <textarea maxlength=500 minlength=20 rows="5" cols="33"></textarea>
+
+    </form>
+
+    <div class="submit">
+        <button type="submit">Submit</button>
+    </div>
 
     </div>
     

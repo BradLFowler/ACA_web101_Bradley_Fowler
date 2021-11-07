@@ -54,6 +54,7 @@ p {
 
 body {
     background-image: url(https://wallpaperaccess.com/full/187161.jpg);
+    background-size: auto;
 }
 
 h2 {
@@ -80,6 +81,7 @@ button {
 .buttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 h1 {
