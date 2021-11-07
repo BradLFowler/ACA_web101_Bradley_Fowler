@@ -80,3 +80,7 @@ h4 {
     width: 100px;
     margin-top: 70px;
 }
+
+button:hover {
+    text-decoration: underline;
+}
