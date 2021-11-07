@@ -1,3 +1,61 @@
+body {
+    background-image: url(https://eskipaper.com/images/simple-backgrounds-11.jpg);
+    background-size: auto;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 400px) {
+section button {
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 120px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    font-size: 15px; 
+}
+
+.contactback {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gridcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit button {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    margin-top: 5px;
+}
+
+h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+}
+
+@media (min-width: 768px) {
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,11 +67,6 @@
     "foot submit bottom";
 }
 
-body {
-    background-image: url(https://eskipaper.com/images/simple-backgrounds-11.jpg);
-    background-size: auto;
-}
-
 .checkbox {
     grid-area: sidebar;
     margin: auto;
@@ -21,7 +74,8 @@ body {
 
 .bdaywish {
     grid-area: bottom;
-    margin-left: 70px;
+    text-align: center;
+    margin-right: 35%;
 }
     
 
@@ -78,9 +132,7 @@ h4 {
     color: white;
     height: 40px;
     width: 100px;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
-button:hover {
-    text-decoration: underline;
 }
